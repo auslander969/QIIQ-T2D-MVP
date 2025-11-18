@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Health Metrics MVP",
+    "slug": "health-metrics-mvp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.health-metrics-mvp",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "This app reads your health data to show steps, sleep and heart rate.",
+        "NSHealthUpdateUsageDescription": "This app writes health data if you ask it to."
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.access": [
+          "health-records"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.anonymous.healthmetricsmvp",
+      "permissions": [
+        "android.permission.health.ACCESS_HEALTH_DATA",
+        "android.permission.health.READ_HEALTH_DATA"
+      ],
+      "health": {
+        "permissions": [
+          "steps",
+          "heart_rate",
+          "sleep"
+        ]
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
+

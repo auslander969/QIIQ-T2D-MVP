@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "Steady Glucose Levels",
+    "metric": "glucose",
+    "timestamp": "2025-11-16T09:00:00Z",
+    "summary": "Your glucose has remained stable over the past week"
+  },
+  {
+    "id": "2",
+    "title": "Activity Increasing",
+    "metric": "steps",
+    "timestamp": "2025-11-16T20:15:00Z",
+    "summary": "You're trending upward in daily steps"
+  },
+  {
+    "id": "3",
+    "title": "Sleep Quality Improving",
+    "metric": "sleep",
+    "timestamp": "2025-11-16T07:00:00Z",
+    "summary": "Your sleep duration has increased by 0.7 hours this week"
+  },
+  {
+    "id": "4",
+    "title": "Resting Heart Rate Lower",
+    "metric": "heart rate",
+    "timestamp": "2025-11-16T20:20:00Z",
+    "summary": "Your heart rate is trending down, indicating better fitness"
+  }
+]

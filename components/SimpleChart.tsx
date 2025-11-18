@@ -46,16 +46,16 @@ export default function SimpleChart({ data, unit }: ChartProps) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 12,
-    padding: 16,
+    backgroundColor: '#151932',
+    borderRadius: 16,
+    padding: 20,
     marginTop: 16,
   },
   title: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#000000',
-    marginBottom: 16,
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginBottom: 20,
   },
   chart: {
     flexDirection: 'row',
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   },
   value: {
     fontSize: 11,
-    color: '#000000',
+    color: '#FFFFFF',
     fontWeight: '600',
     marginBottom: 4,
   },
@@ -81,19 +81,20 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   bar: {
-    width: 24,
-    backgroundColor: '#007AFF',
-    borderRadius: 4,
+    width: 28,
+    backgroundColor: '#5B7CFF',
+    borderRadius: 6,
   },
   label: {
     fontSize: 10,
     color: '#8E8E93',
-    marginTop: 4,
+    marginTop: 6,
+    fontWeight: '500',
   },
   unit: {
-    fontSize: 13,
+    fontSize: 12,
     color: '#8E8E93',
     textAlign: 'center',
-    marginTop: 8,
+    marginTop: 12,
   },
 });

@@ -138,7 +138,7 @@ export default function ChatScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F2F2F7',
+    backgroundColor: '#0A0E27',
   },
   messagesContainer: {
     flex: 1,
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   emptyText: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#000000',
+    color: '#FFFFFF',
     textAlign: 'center',
     marginBottom: 8,
   },
@@ -173,11 +173,11 @@ const styles = StyleSheet.create({
   },
   userBubble: {
     alignSelf: 'flex-end',
-    backgroundColor: '#007AFF',
+    backgroundColor: '#5B7CFF',
   },
   systemBubble: {
     alignSelf: 'flex-start',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#151932',
   },
   messageText: {
     fontSize: 15,
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   systemText: {
-    color: '#000000',
+    color: '#FFFFFF',
   },
   messageTime: {
     fontSize: 11,
@@ -202,30 +202,31 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     padding: 12,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#0F1129',
     borderTopWidth: 1,
-    borderTopColor: '#E5E5EA',
+    borderTopColor: '#1C1C2E',
     alignItems: 'flex-end',
   },
   input: {
     flex: 1,
-    backgroundColor: '#F2F2F7',
+    backgroundColor: '#151932',
     borderRadius: 20,
     paddingHorizontal: 16,
     paddingVertical: 10,
     fontSize: 15,
     maxHeight: 100,
     marginRight: 8,
+    color: '#FFFFFF',
   },
   sendButton: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#007AFF',
+    backgroundColor: '#5B7CFF',
     justifyContent: 'center',
     alignItems: 'center',
   },
   sendButtonDisabled: {
-    backgroundColor: '#E5E5EA',
+    backgroundColor: '#1C1C2E',
   },
 });

@@ -1,12 +1,25 @@
 import { Tabs } from 'expo-router';
-import { Home, Activity, MessageSquare, Lightbulb } from 'lucide-react-native';
+import { Home, Sparkles, Users, User } from 'lucide-react-native';
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: true,
-        tabBarActiveTintColor: '#007AFF',
+        headerShown: false,
+        tabBarActiveTintColor: '#5B7CFF',
+        tabBarInactiveTintColor: '#6E6E80',
+        tabBarStyle: {
+          backgroundColor: '#0F1129',
+          borderTopColor: '#1C1C2E',
+          borderTopWidth: 1,
+          paddingTop: 8,
+          paddingBottom: 24,
+          height: 88,
+        },
+        tabBarLabelStyle: {
+          fontSize: 11,
+          fontWeight: '600',
+        },
       }}>
       <Tabs.Screen
         name="index"
@@ -20,18 +33,18 @@ export default function TabLayout() {
       <Tabs.Screen
         name="insights"
         options={{
-          title: 'Insights',
+          title: 'Journey',
           tabBarIcon: ({ size, color }) => (
-            <Lightbulb size={size} color={color} />
+            <Sparkles size={size} color={color} strokeWidth={2} />
           ),
         }}
       />
       <Tabs.Screen
         name="chat"
         options={{
-          title: 'Chat',
+          title: 'Community',
           tabBarIcon: ({ size, color }) => (
-            <MessageSquare size={size} color={color} />
+            <Users size={size} color={color} strokeWidth={2} />
           ),
         }}
       />

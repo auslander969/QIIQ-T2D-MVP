@@ -1,4 +1,3 @@
-import { Link } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -48,13 +47,6 @@ export default function HomeScreen() {
     <ScrollView style={styles.container}>
       <View style={styles.content}>
         <Text style={styles.heading}>Your Health Metrics</Text>
-
-        <Link
-          href="/sahha-test"
-          style={{ marginBottom: 20, fontSize: 18, color: '#007AFF' }}
-        >
-          Go to Sahha Test
-        </Link>
 
         {metrics.glucose && (
           <MetricCard
@@ -125,4 +117,3 @@ const styles = StyleSheet.create({
     backgroundColor: '#F2F2F7',
   },
 });
-
